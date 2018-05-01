@@ -96,6 +96,10 @@ sccpE2E.logInWithRole('viewer'); // Faz login com as credenciais viewer/viewer
 ```
 
 #### ```logOut```
+Este método clica no botão de *logout* e sai do sistema.
+
+*Obs.: É necessário estar autenticado para que este método funcione.*
+
 ```javascript
 sccpE2E.logOut();
 ```
