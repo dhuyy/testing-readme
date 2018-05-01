@@ -24,9 +24,16 @@
 ----------------
 
 #### ```openMenu```
-Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o nome do menu em Inglês e em *lowercase*.
+Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o
+nome do menu em Inglês e em *lowercase*, por exemplo:
 
-Ex: Registers = registers | Input/Output = inputOutput
+Registers = registers
+
+A formatação *Camel Case* se aplica aos casos de nomes com mais de uma
+palavra, por exemplo:
+
+Input/Output = inputOutput
+
 ```javascript
 sccpE2E.openMenu('registers');
 ```
