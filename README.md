@@ -25,7 +25,7 @@
 
 #### ```openMenu```
 Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o
-nome do menu em Inglês e em *lowercase*, por exemplo:
+exato nome do menu em Inglês e em *lowercase*, por exemplo:
 
 `Registers = registers`
 
@@ -35,9 +35,28 @@ Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 
 ```javascript
 sccpE2E.openMenu('registers');
+sccpE2E.openMenu('inputOutput');
 ```
 
 #### ```selectSubmenu```
+Este método seleciona um submenu após o *dropdown* do menu principal relacionado
+for aberto. O parâmetro deve ser o exato nome do submenu em Inglês e em
+*lowercase*, por exemplo:
+
+`Periods = periods`
+
+Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
+
+`Setup Kits = setupKits`
+`Semester Forecast = semesterForecast`
+
+Para submenus com nomes idênticos como *Input/Output > Proportional* e
+*Simulation > Proportional* deve-se adicionar o nome do menu correspondente
+ao início do nome, por exemplo:
+
+`Input/Output > Proportional = inputOutputProportional`
+`Simulation > Proportional = simulationProportional`
+
 ```javascript
 sccpE2E.openMenu('registers'); // Necessário para o método abaixo funcionar
 sccpE2E.selectSubmenu('periods');
