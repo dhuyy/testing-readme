@@ -43,21 +43,21 @@ Este método seleciona um submenu após o *dropdown* do menu principal correspon
 for aberto. O parâmetro deve ser o exato nome do submenu em Inglês e em
 *lowercase*, por exemplo:
 
-`Periods = periods`
+- `Periods = periods`
 
 Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 
-`Setup Kits = setupKits`
+- `Setup Kits = setupKits`
 
-`Semester Forecast = semesterForecast`
+- `Semester Forecast = semesterForecast`
 
 Para submenus com nomes idênticos como *Input/Output > Proportional* e
 *Simulation > Proportional* deve-se adicionar o nome do menu correspondente
 ao início do nome do submenu, por exemplo:
 
-`Input/Output > Proportional = inputOutputProportional`
+- `Input/Output > Proportional = inputOutputProportional`
 
-`Simulation > Proportional = simulationProportional`
+- `Simulation > Proportional = simulationProportional`
 
 ```javascript
 sccpE2E.openMenu('registers'); // Necessário para o método abaixo funcionar
