@@ -39,7 +39,7 @@ sccpE2E.openMenu('inputOutput');
 ```
 
 #### ```selectSubmenu```
-Este método seleciona um submenu após o *dropdown* do menu principal relacionado
+Este método seleciona um submenu após o *dropdown* do menu principal correspondente
 for aberto. O parâmetro deve ser o exato nome do submenu em Inglês e em
 *lowercase*, por exemplo:
 
