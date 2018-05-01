@@ -62,6 +62,9 @@ ao início do nome do submenu, por exemplo:
 ```javascript
 sccpE2E.openMenu('registers'); // Necessário para o método abaixo funcionar
 sccpE2E.selectSubmenu('periods');
+
+sccpE2E.openMenu('inputOutput');
+sccpE2E.selectSubmenu('inputOutputProportional');
 ```
 
 #### ```logInWithUsernameAndPassword```
