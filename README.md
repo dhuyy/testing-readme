@@ -27,12 +27,12 @@
 Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o
 nome do menu em Inglês e em *lowercase*, por exemplo:
 
-Registers = registers
+`Registers = registers`
 
 A formatação *Camel Case* se aplica aos casos de nomes com mais de uma
 palavra, por exemplo:
 
-Input/Output = inputOutput
+`Input/Output = inputOutput`
 
 ```javascript
 sccpE2E.openMenu('registers');
