@@ -8,6 +8,7 @@
 | Helper | Descrição |
 | ------ | ------ |
 | [openMenu](#openmenu) | Abre um item do menu principal. |
+| [selectSubmenu](#selectsubmenu) | Seleciona um item do submenu. |
 
 `Login`
 
@@ -24,21 +25,26 @@
 
 #### ```openMenu```
 ```javascript
-sccp.openMenu('cadastros'); // parâmetro em pt-BR
-sccp.openMenu('registers'); // parâmetro em EN
+sccpE2E.openMenu('registers');
+```
+
+#### ```selectSubmenu```
+```javascript
+sccpE2E.openMenu('registers'); // Necessário para o método abaixo funcionar
+sccpE2E.selectSubmenu('periods');
 ```
 
 #### ```logInWithUsernameAndPassword```
 ```javascript
-sccp.logInWithUsernameAndPassword('sccp', 'venturus2016');
+sccpE2E.logInWithUsernameAndPassword('sccp', 'venturus2016');
 ```
 
 #### ```logInWithRole```
 ```javascript
-sccp.logInWithRole('admin'); // Faz login com as credenciais sccp/venturus2016 
+sccpE2E.logInWithRole('admin'); // Faz login com as credenciais sccp/venturus2016 
 ```
 
 #### ```logOut```
 ```javascript
-sccp.logOut();
+sccpE2E.logOut();
 ```
