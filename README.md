@@ -29,8 +29,7 @@ nome do menu em Inglês e em *lowercase*, por exemplo:
 
 `Registers = registers`
 
-A formatação *Camel Case* se aplica aos casos de nomes com mais de uma
-palavra, por exemplo:
+Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 
 `Input/Output = inputOutput`
 
