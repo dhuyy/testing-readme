@@ -68,12 +68,12 @@ sccpE2E.selectSubmenu('inputOutputProportional');
 ```
 
 #### ```logInWithUsernameAndPassword```
-Este método preenche os campos de *username* e *password* e clicar no botão
+Este método preenche os campos de *username* e *password* e clica no botão
 para entrar no sistema.
 
-O primeiro parâmetro deve ser o *username* e o segundo o *password*.
+O primeiro parâmetro deve ser o *username* seguido do *password*.
 
-*É necessário estar na tela de login para que este método funcione.*
+*Obs.: É necessário estar na tela de login para que este método funcione.*
 
 ```javascript
 sccpE2E.logInWithUsernameAndPassword('sccp', 'venturus2016');
@@ -82,8 +82,17 @@ sccpE2E.logInWithUsernameAndPassword('viewer', 'viewer');
 ```
 
 #### ```logInWithRole```
+Este método preenche os campos de *username* e *password* e clica no botão
+para entrar no sistema.
+
+O parâmetro deve ser a *role* correspondente ao usuário.
+
+*Obs.: É necessário estar na tela de login para que este método funcione.*
+
 ```javascript
-sccpE2E.logInWithRole('admin'); // Faz login com as credenciais sccp/venturus2016 
+sccpE2E.logInWithRole('admin'); // Faz login com as credenciais sccp/venturus2016
+
+sccpE2E.logInWithRole('viewer'); // Faz login com as credenciais viewer/viewer
 ```
 
 #### ```logOut```
