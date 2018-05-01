@@ -68,6 +68,12 @@ sccpE2E.selectSubmenu('inputOutputProportional');
 ```
 
 #### ```logInWithUsernameAndPassword```
+Este métodos preenche os campos de *username* e *password* e clicar no botão
+para entrar no sistema. O primeiro parâmetro deve ser o *username* e o segundo
+o *password*
+
+```É necessário estar na tela de login para que este método funcione.```
+
 ```javascript
 sccpE2E.logInWithUsernameAndPassword('sccp', 'venturus2016');
 ```
