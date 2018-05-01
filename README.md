@@ -48,6 +48,7 @@ for aberto. O parâmetro deve ser o exato nome do submenu em Inglês e em
 Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 
 `Setup Kits = setupKits`
+
 `Semester Forecast = semesterForecast`
 
 Para submenus com nomes idênticos como *Input/Output > Proportional* e
@@ -55,6 +56,7 @@ Para submenus com nomes idênticos como *Input/Output > Proportional* e
 ao início do nome, por exemplo:
 
 `Input/Output > Proportional = inputOutputProportional`
+
 `Simulation > Proportional = simulationProportional`
 
 ```javascript
