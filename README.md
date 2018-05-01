@@ -53,7 +53,7 @@ Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 
 Para submenus com nomes idênticos como *Input/Output > Proportional* e
 *Simulation > Proportional* deve-se adicionar o nome do menu correspondente
-ao início do nome, por exemplo:
+ao início do nome do submenu, por exemplo:
 
 `Input/Output > Proportional = inputOutputProportional`
 
