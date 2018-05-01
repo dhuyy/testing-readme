@@ -25,6 +25,7 @@
 
 #### ```openMenu```
 Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o nome do menu em Inglês e em *lowercase*.
+
 Ex: Registers = registers | Input/Output = inputOutput
 ```javascript
 sccpE2E.openMenu('registers');
