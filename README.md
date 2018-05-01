@@ -27,11 +27,11 @@
 Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o
 exato nome do menu em Inglês e em *lowercase*, por exemplo:
 
-`Registers = registers`
+- `Registers = registers`
 
 Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 
-`Input/Output = inputOutput`
+- `Input/Output = inputOutput`
 
 ```javascript
 sccpE2E.openMenu('registers');
@@ -63,7 +63,7 @@ ao início do nome do submenu, por exemplo:
 sccpE2E.openMenu('registers'); // Necessário para o método abaixo funcionar
 sccpE2E.selectSubmenu('periods');
 
-sccpE2E.openMenu('inputOutput');
+sccpE2E.openMenu('inputOutput'); // Necessário para o método abaixo funcionar
 sccpE2E.selectSubmenu('inputOutputProportional');
 ```
 
