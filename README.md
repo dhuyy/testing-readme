@@ -111,8 +111,8 @@ sccpE2E.logOut();
 ```
 
 #### ```disableHelpModalIfVisible```
-Este método desabilita a opção de "Mostrar ao abrir" e fecha o *modal* de ajuda na
-tela de *Sales > Data Forecast*
+Este método desabilita a opção "Mostrar ao abrir" e fecha o *modal* de ajuda na
+tela de *Sales > Data Forecast*.
 
 *Obs.: Este método só precisa ser invocado uma vez para que o modal não apareça mais.*
 
@@ -120,7 +120,7 @@ tela de *Sales > Data Forecast*
 sccpE2E.openMenu('sales');
 sccpE2E.selectSubmenu('dataForecast');
 
-// Caso o modal de ajuda abra, o método abaixo desabilita e o fecha
+// Caso o modal de ajuda abra, o método abaixo irá desabilitar e fecha-lo
 
 sccpE2E.disableHelpModalIfVisible();
 ```
