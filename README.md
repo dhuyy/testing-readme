@@ -18,6 +18,12 @@
 | [logInWithRole](#loginwithrole) | Login a partir de um *role*. |
 | [logOut](#logout) | Logout do sistema. |
 
+`Sales`
+
+| Helper | Descrição |
+| ------ | ------ |
+| [disableHelpModalIfVisible](#disablehelpmodalifvisible) | Desabilita o *modal* de ajuda. |
+
 &nbsp;
 
 ### Documentação
@@ -102,4 +108,19 @@ Este método clica no botão de *logout* e sai do sistema.
 
 ```javascript
 sccpE2E.logOut();
+```
+
+#### ```disableHelpModalIfVisible```
+Este método desabilita a opção de "Mostrar ao abrir" e fecha o *modal* de ajuda na
+tela de *Sales > Data Forecast*
+
+*Obs.: Este método só precisa ser invocado uma vez para que o modal não apareça mais.*
+
+```javascript
+sccpE2E.openMenu('sales');
+sccpE2E.selectSubmenu('dataForecast');
+
+// Caso o modal de ajuda abra, o método abaixo desabilita e o fecha
+
+sccpE2E.disableHelpModalIfVisible();
 ```
