@@ -9,7 +9,7 @@
 | ------ | ------ |
 | [openMenu](#openmenu) | Abre um item do menu principal. |
 | [selectSubmenu](#selectsubmenu) | Seleciona um item do submenu. |
-| [isMenuVisible](#ismenuvisible) | Verifica se um item do menu está visível. |
+| [isMenuVisible](#ismenuvisible) | Verifica se um item de menu está visível. |
 
 `Login`
 
