@@ -80,9 +80,9 @@ Este método verifica se um item de menu está visível.
 *Obs.: Este método deve ser invocado dentro de um expect().*
 
 ```javascript
-expect(sccpE2E.isMenuVisible('registers')).toEqual(true);
+expect(sccpE2E.isMenuVisible('registers')).toEqual(true); // PASS - Se o menu estiver visível
 
-expect(sccpE2E.isMenuVisible('registers')).toEqual(false);
+expect(sccpE2E.isMenuVisible('registers')).toEqual(false); // FAIL - Se o menu não estiver visível
 ```
 
 #### ```logInWithUsernameAndPassword```
