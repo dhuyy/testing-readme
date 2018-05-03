@@ -9,6 +9,7 @@
 | ------ | ------ |
 | [openMenu](#openmenu) | Abre um item do menu principal. |
 | [selectSubmenu](#selectsubmenu) | Seleciona um item do submenu. |
+| [isMenuVisible](#ismenuvisible) | Verifica se um item do menu está visível. |
 
 `Login`
 
@@ -73,6 +74,17 @@ sccpE2E.openMenu('inputOutput'); // Necessário para o método abaixo funcionar
 sccpE2E.selectSubmenu('inputOutputProportional');
 ```
 
+#### ```isMenuVisible```
+Este método verifica se um item de menu está visível.
+
+*Obs.: Este método deve ser invocado dentro de um expect().*
+
+```javascript
+expect(sccpE2E.isMenuVisible('registers')).toEqual(true);
+
+expect(sccpE2E.isMenuVisible('registers')).toEqual(false);
+```
+
 #### ```logInWithUsernameAndPassword```
 Este método preenche os campos de *username* e *password* e clica no botão
 para entrar no sistema.
@@ -120,7 +132,7 @@ tela de *Sales > Data Forecast*.
 sccpE2E.openMenu('sales');
 sccpE2E.selectSubmenu('dataForecast');
 
-// Caso o modal de ajuda abra, o método abaixo irá desabilitar e fecha-lo
+// O método abaixo irá desabilitar e fechar o modal de ajuda
 
 sccpE2E.disableHelpModalIfVisible();
 ```
