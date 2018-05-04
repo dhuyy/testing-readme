@@ -7,7 +7,7 @@
 
 | Helper | Descrição |
 | ------ | ------ |
-| [openWebPage](#openwebpage) | Acessa o endereço *http://localhost:3000* no browser. |
+| [openWebPage](#openwebpage) | Acessa o endereço *localhost:3000*. |
 | [openMenu](#openmenu) | Abre um item do menu principal. |
 | [selectSubmenu](#selectsubmenu) | Seleciona um item do submenu. |
 | [isMenuVisible](#ismenuvisible) | Verifica se um item de menu está visível. |
