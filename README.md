@@ -30,6 +30,12 @@
 ### Documentação
 ----------------
 
+<!---
+-
+- openMenu
+-
+-->
+
 #### ```openMenu```
 Este método abre o *dropdown* de um menu principal. O parâmetro deve ser o
 exato nome do menu em Inglês e em *lowercase*, por exemplo:
@@ -44,6 +50,12 @@ Para os nomes com mais de uma palavra, deve-se usar *Camel Case*, por exemplo:
 sccpE2E.openMenu('registers');
 sccpE2E.openMenu('inputOutput');
 ```
+
+<!---
+-
+- selectSubmenu
+-
+-->
 
 #### ```selectSubmenu```
 Este método seleciona um submenu após o *dropdown* do menu principal correspondente
@@ -74,6 +86,12 @@ sccpE2E.openMenu('inputOutput'); // Necessário para o método abaixo funcionar
 sccpE2E.selectSubmenu('inputOutputProportional');
 ```
 
+<!---
+-
+- isMenuVisible
+-
+-->
+
 #### ```isMenuVisible```
 Este método verifica se um item de menu está visível.
 
@@ -82,8 +100,14 @@ Este método verifica se um item de menu está visível.
 ```javascript
 expect(sccpE2E.isMenuVisible('registers')).toEqual(true); // PASS - Se o menu estiver visível
 
-expect(sccpE2E.isMenuVisible('registers')).toEqual(false); // FAIL - Se o menu não estiver visível
+expect(sccpE2E.isMenuVisible('inputOutput')).toEqual(false); // PASS - Se o menu não estiver visível
 ```
+
+<!---
+-
+- logInWithUsernameAndPassword
+-
+-->
 
 #### ```logInWithUsernameAndPassword```
 Este método preenche os campos de *username* e *password* e clica no botão
@@ -99,6 +123,12 @@ sccpE2E.logInWithUsernameAndPassword('sccp', 'venturus2016');
 sccpE2E.logInWithUsernameAndPassword('viewer', 'viewer');
 ```
 
+<!---
+-
+- logInWithRole
+-
+-->
+
 #### ```logInWithRole```
 Este método preenche os campos de *username* e *password* e clica no botão
 para entrar no sistema.
@@ -113,6 +143,12 @@ sccpE2E.logInWithRole('admin'); // Faz login com as credenciais sccp/venturus201
 sccpE2E.logInWithRole('viewer'); // Faz login com as credenciais viewer/viewer
 ```
 
+<!---
+-
+- logOut
+-
+-->
+
 #### ```logOut```
 Este método clica no botão de *logout* e sai do sistema.
 
@@ -121,6 +157,12 @@ Este método clica no botão de *logout* e sai do sistema.
 ```javascript
 sccpE2E.logOut();
 ```
+
+<!---
+-
+- disableHelpModalIfVisible
+-
+-->
 
 #### ```disableHelpModalIfVisible```
 Este método desabilita a opção "Mostrar ao abrir" e fecha o *modal* de ajuda na
