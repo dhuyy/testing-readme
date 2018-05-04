@@ -129,6 +129,33 @@ expect(sccpE2E.isMenuVisible('inputOutput')).toEqual(false); // PASS - Se o menu
 
 <!---
 -
+- dropDatabase
+-
+-->
+
+#### ```dropDatabase```
+Este método faz uma requisição ao servidor para uma total limpeza do banco de dados. O endereço requisitado
+é o http://localhost:53993/api/Database/Drop.
+
+É preferível usar esse método dentro de um beforeAll (caso desejar limpar o DB para a *suite*)
+ou dentro de um beforeEach (caso desejar limpar o DB para cada *test case*).
+
+*Obs.: Este método põe a execução de comandos do WebDriver em hold até que a requisição HTTP seja resolvida.*
+
+```javascript
+// Limpa o DB antes de cada Suite
+beforeAll(function() {
+  sccpE2E.dropDatabase();
+})
+
+// Limpa o DB antes de cada Test Case
+beforeEach(function() {
+  sccpE2E.dropDatabase();
+})
+```
+
+<!---
+-
 - logInWithUsernameAndPassword
 -
 -->
