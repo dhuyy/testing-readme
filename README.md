@@ -16,7 +16,7 @@
 
 | Helper | Descrição |
 | ------ | ------ |
-| [dropDatabase](#dropdatabase) | Requisita ao servidor uma limpeza do banco de dados. |
+| [dropDatabase](#dropdatabase) | Requisita uma limpeza do banco de dados ao servidor. |
 
 `Login`
 
@@ -36,6 +36,23 @@
 
 ### Documentação
 ----------------
+
+<!---
+-
+- openWebPage
+-
+-->
+
+#### ```openWebPage```
+Este método acessa o endereço http://localhost:3000 na barra de endereços do browser;
+
+*Obs.: Normalmente este método só é invocado dentro de um beforeAll().*
+
+```javascript
+beforeAll() {
+  sccpE2E.openWebPage();
+}
+```
 
 <!---
 -
