@@ -7,9 +7,16 @@
 
 | Helper | Descrição |
 | ------ | ------ |
+| [openWebPage](#openwebpage) | Acessa o endereço *http://localhost:3000* no browser. |
 | [openMenu](#openmenu) | Abre um item do menu principal. |
 | [selectSubmenu](#selectsubmenu) | Seleciona um item do submenu. |
 | [isMenuVisible](#ismenuvisible) | Verifica se um item de menu está visível. |
+
+`Database`
+
+| Helper | Descrição |
+| ------ | ------ |
+| [dropDatabase](#dropdatabase) | Requisita ao servidor uma limpeza do banco de dados. |
 
 `Login`
 
