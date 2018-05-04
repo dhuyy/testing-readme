@@ -44,7 +44,7 @@
 -->
 
 #### ```openWebPage```
-Este método acessa o endereço http://localhost:3000 na barra de endereços do browser;
+Este método acessa o endereço http://localhost:3000 na barra de endereços do browser.
 
 *Obs.: Normalmente este método só é invocado dentro de um beforeAll().*
 
