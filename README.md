@@ -83,10 +83,8 @@ sccpE2E.openMenu('inputOutput');
 -->
 
 #### ```closeMenu```
-Este método fecha um menu.
-
 *Obs.: Este método tem a mesma lógica do método openMenu() e foi escrito
-apenas para dar mais sentido a lógica dos test cases.*
+apenas para dar mais sentido a leitura do código do test case.*
 
 ```javascript
 sccpE2E.openMenu('registers'); // Abre
