@@ -12,6 +12,7 @@
 | [closeMenu](#closemenu) | Fecha um item do menu principal. |
 | [selectSubmenu](#selectsubmenu) | Seleciona um item do submenu. |
 | [isMenuVisible](#ismenuvisible) | Verifica se um item de menu está visível. |
+| [isSubmenuVisible](#issubmenuvisible) | Verifica se um item de submenu está visível. |
 
 `Database`
 
@@ -90,7 +91,6 @@ apenas para dar mais sentido a leitura do código do test case.*
 sccpE2E.openMenu('registers'); // Abre
 
 sccpE2E.closeMenu('registers'); // Fecha
-}
 ```
 
 <!---
@@ -143,6 +143,23 @@ Este método verifica se um item de menu está visível.
 expect(sccpE2E.isMenuVisible('registers')).toEqual(true); // PASS - Se o menu estiver visível
 
 expect(sccpE2E.isMenuVisible('inputOutput')).toEqual(false); // PASS - Se o menu não estiver visível
+```
+
+<!---
+-
+- isSubmenuVisible
+-
+-->
+
+#### ```isSubmenuVisible```
+Este método verifica se um item de submenu está visível.
+
+*Obs.: Este método deve ser invocado após o método openMenu().*
+
+```javascript
+sccpE2E.openMenu('inputOutput'); // Abre o menu Input/Output
+
+expect(sccpE2E.isMenuVisible('analysis')).toEqual(true); // PASS - Se o submenu Analysis estiver visível
 ```
 
 <!---
