@@ -38,13 +38,13 @@
 
 | Helper | Descrição |
 | ------ | ------ |
-| [linkSalesPartNumberInProductPage](#linksalespartnumberinproductpage) | Faz a ligação de Part Number de Vendas com um Produto. |
+| [linkSalesPartNumberInProductPage](#linksalespartnumberinproductpage) | Faz a ligação de Part Number de Vendas com um novo Produto. |
 
 `Registers > Customer`
 
 | Helper | Descrição |
 | ------ | ------ |
-| [linkPartNumberInCustomerPage](#linkpartnumberincustomerpage) | Faz a ligação de Part Number com um Cliente. |
+| [linkPartNumberInCustomerPage](#linkpartnumberincustomerpage) | Faz a ligação de Part Number com um novo Cliente. |
 
 `Sales > Forecast Data`
 
@@ -285,7 +285,7 @@ sccpE2E.addPeriods(5); // Cria 5 períodos
 -->
 
 #### ```linkSalesPartNumberInProductPage```
-Este método faz a ligação de um Part Number de Vendas com um Produto. O método irá
+Este método faz a ligação de um Part Number de Vendas na hora da criação de um Produto. O método irá
 clicar no botão de ligação, selecionar o Part Number de acordo com o parâmetro passado
 na chamada e clicar no botão de confirmar a ligação.
 
@@ -300,7 +300,7 @@ sccpE2E.linkSalesPartNumberInProductPage('Dell X8237'); // Faz a ligação de um
 -->
 
 #### ```linkPartNumberInCustomerPage```
-Este método faz a ligação de um Part Number com um Cliente. O método irá
+Este método faz a ligação de um Part Number na hora da criação de um Cliente. O método irá
 clicar no botão de ligação, selecionar o Part Number de acordo com o parâmetro passado
 na chamada e clicar no botão de confirmar a ligação.
 
