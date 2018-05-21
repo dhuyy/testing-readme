@@ -280,6 +280,36 @@ sccpE2E.addPeriods(5); // Cria 5 períodos
 
 <!---
 -
+- linkSalesPartNumberInProductPage
+-
+-->
+
+#### ```linkSalesPartNumberInProductPage```
+Este método faz a ligação de um Part Number de Vendas com um Produto. O método irá
+clicar no botão de ligação, selecionar o Part Number de acordo com o parâmetro passado
+na chamada e clicar no botão de confirmar a ligação.
+
+```javascript
+sccpE2E.linkSalesPartNumberInProductPage('Dell X8237'); // Faz a ligação de um Produto com o PN de Vendas: Dell X8237
+```
+
+<!---
+-
+- linkPartNumberInCustomerPage
+-
+-->
+
+#### ```linkPartNumberInCustomerPage```
+Este método faz a ligação de um Part Number com um Cliente. O método irá
+clicar no botão de ligação, selecionar o Part Number de acordo com o parâmetro passado
+na chamada e clicar no botão de confirmar a ligação.
+
+```javascript
+sccpE2E.linkPartNumberInCustomerPage('Samsung Z0438'); // Faz a ligação de um Cliente com o PN: Samsung Z0438
+```
+
+<!---
+-
 - disableHelpModalIfVisible
 -
 -->
